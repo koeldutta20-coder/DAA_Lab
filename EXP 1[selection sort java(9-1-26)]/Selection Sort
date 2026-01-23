@@ -1,0 +1,29 @@
+What is Selection Sort?
+
+Selection Sort is a simple comparison-based sorting algorithm.
+
+Idea:
+
+Divide the array into sorted and unsorted parts
+
+Repeatedly select the smallest element from the unsorted part
+
+Swap it with the first element of the unsorted part
+
+🔁 How Selection Sort Works (Step-by-Step)
+
+Given array:
+[64, 25, 12, 22, 11]
+
+Find smallest → 11 → swap with 64
+[11, 25, 12, 22, 64]
+
+Find smallest in remaining → 12 → swap with 25
+[11, 12, 25, 22, 64]
+
+Find smallest → 22 → swap with 25
+[11, 12, 22, 25, 64]
+
+Find smallest → 25 → already in place
+
+✅ Array is sorted.

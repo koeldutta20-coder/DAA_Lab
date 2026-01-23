@@ -1,0 +1,105 @@
+ Definition
+
+**Quick Sort** is a **divide-and-conquer based sorting algorithm** that sorts an array by selecting a **pivot element**, partitioning the array around the pivot, and then recursively sorting the sub-arrays.
+
+---
+
+## 🧠 Basic Idea
+
+1. Choose a **pivot** element from the array
+2. Rearrange elements such that
+
+   * Elements **smaller than pivot** go to the left
+   * Elements **greater than pivot** go to the right
+3. Pivot is placed in its **correct position**
+4. Recursively apply the same process to left and right sub-arrays
+
+---
+
+## 🔁 Working of Quick Sort (Step-wise)
+
+Given array:
+`[10, 7, 8, 9, 1, 5]`
+
+1. Choose pivot → `5`
+2. Partition array → `[1] 5 [10, 7, 8, 9]`
+3. Apply quick sort to left and right sub-arrays
+4. Repeat until each sub-array has one element
+
+✔ Sorted array: `[1, 5, 7, 8, 9, 10]`
+
+---
+
+## ⚙ Partitioning
+
+Partitioning is the key step in Quick Sort.
+
+Common pivot choices:
+
+* First element
+* Last element (most common)
+* Middle element
+* Random element
+
+After partitioning:
+
+* Pivot is in its **final sorted position**
+* No element on the left is greater than pivot
+* No element on the right is smaller than pivot
+
+---
+
+## ⏱ Time Complexity
+
+| Case         | Complexity     |
+| ------------ | -------------- |
+| Best Case    | **O(n log n)** |
+| Average Case | **O(n log n)** |
+| Worst Case   | **O(n²)**      |
+
+📉 Worst case occurs when:
+
+* Array is already sorted
+* Pivot is always the smallest or largest element
+
+---
+
+## 💾 Space Complexity
+
+* **O(log n)** (recursive stack, best/average case)
+* **O(n)** (worst case)
+
+---
+
+## 🔐 Characteristics
+
+* **In-place sorting:** ✔ Yes
+* **Stable:** ❌ No
+* **Comparison-based:** ✔ Yes
+* **Recursive algorithm:** ✔ Yes
+
+---
+
+## ✅ Advantages
+
+✔ Very fast in practice
+✔ Efficient for large datasets
+✔ Cache friendly
+
+---
+
+## ❌ Disadvantages
+
+✖ Worst-case time is O(n²)
+✖ Not stable
+✖ Recursive overhead
+
+---
+
+## 📚 Applications
+
+* Used in system libraries
+* Efficient for large arrays
+* Widely used in competitive programming
+
+
